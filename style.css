@@ -1,0 +1,304 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    perspective: 20px;
+
+}
+
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    /* position: relative; */
+    transform-origin: center center;
+    transform-style: preserve-3d;
+}
+
+.sky {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translateZ(-50px) scale(3.5);
+    z-index: -1;
+
+}
+
+.moon {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translateZ(-45px) scale(0.6) translateY(-650px) translateX(1000px);
+    position: absolute;
+    z-index: -1;
+
+
+}
+
+.man {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform-origin: center;
+    z-index: -1;
+    transform: translateZ(-5px) scale(4.3) translateX(545px);
+}
+
+.head {
+    position: absolute;
+    transform: translate(0, -230px);
+    font-family: 'Berkshire Swash';
+    color: whitesmoke;
+    text-shadow: 10px 10px 12px black;
+    letter-spacing: 4px;
+    font-size: 7rem;
+    font-style: italic;
+}
+
+.text {
+    position: relative;
+    color: white;
+    transform: translateZ(-1px) scale(1.05);
+    background-image: linear-gradient(to bottom right, black, black, rgb(13, 8, 68), rgb(38, 4, 124), rgba(0, 0, 0, 0), rgb(25, 13, 71), rgb(7, 7, 134), rgb(73, 73, 239), rgb(151, 151, 225));
+    font-size: 1.5rem;
+    padding: 60px;
+    font-family: 'EB Garamond';
+    /* z-index: 2; */
+}
+
+.text h2 {
+    font-family: 'Berkshire Swash';
+    font-size: 5rem;
+    padding-bottom: 3rem;
+    letter-spacing: 2px;
+
+}
+
+strong {
+    font-family: 'EB Garamond';
+    font-size: 5rem;
+    padding-bottom: 0%;
+}
+
+.bg {
+    position: relative;
+    width: 100%;
+    height: 70%;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.heading {
+    position: absolute;
+    top: 35%;
+    left: 15%;
+    font-family: 'Berkshire Swash';
+    color: whitesmoke;
+    text-shadow: 10px 10px 12px black;
+    letter-spacing: 4px;
+    font-size: 4rem;
+    font-style: italic;
+    background-color: rgba(13, 27, 131, 0.751);
+    padding: 1rem;
+}
+
+.story {
+    position: relative;
+    color: white;
+    transform: translateZ(-1px) scale(1.05);
+    background-image: linear-gradient(to bottom right, black, rgb(13, 8, 68), rgb(52, 17, 139), rgb(58, 30, 167), rgb(6, 6, 101), rgb(73, 73, 239), rgb(151, 151, 225));
+    font-size: 1.5rem;
+    padding: 60px;
+    font-family: 'EB Garamond';
+}
+
+
+.link    {
+    text-decoration: none;
+    background-color: rgba(8, 6, 35, 0.647);
+    padding: 1rem;
+    color: white;
+
+}
+
+
+.love1 {
+    background: url(https://wallpapercave.com/wp/wp2423383.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    height: 70%;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.love2 {
+    background: url(https://w0.peakpx.com/wallpaper/361/251/HD-wallpaper-heer-and-ranjha-love-heer-famous-asian-story-great.jpg);
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-position: center;
+    position: relative;
+    width: 100%;
+    height: 70%;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+
+}
+
+
+.love3 {
+    background: url(https://digwallpapers.com/wallpapers/full/4/f/4/101446-3840x2160-titanic-jack-and-rose-wallpaper-image-desktop-4k.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    height: 70%;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.love4 {
+    background: url(https://cutewallpaper.org/21/pride-and-prejudice-wallpaper/Pride-Prejudice-Wallpapers-WallpaperTag.jpg);
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    height: 70%;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.love5 {
+    background: url(https://wallpapercave.com/wp/wp6760352.jpg) no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    width: 100%;
+    height: 70%;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+
+}
+
+
+#view_more1 {
+    display: none;
+}
+
+#view_more1:target {
+    display: block;
+}
+
+#view_more2 {
+    display: none;
+}
+
+#view_more2:target {
+    display: block;
+}
+
+#view_more3 {
+    display: none;
+}
+
+#view_more3:target {
+    display: block;
+}
+
+#view_more4 {
+    display: none;
+}
+
+#view_more4:target {
+    display: block;
+}
+
+#view_more5 {
+    display: none;
+}
+
+#view_more5:target {
+    display: block;
+}
+
+.box-1{
+    float: left;
+    padding-top: 3rem;
+    padding-left: 23rem;
+   
+
+}
+.box-1 img{
+    border-radius: 500px;
+    width: 50%;
+    box-shadow: 15px 15px 19px rgb(108, 106, 106);
+}
+
+li a{
+    font-size: 2rem;
+    text-decoration: none;
+    color: rgb(12, 12, 89);
+    text-shadow: 5px 5px 6px rgb(108, 106, 106);
+    
+}
+li{
+    list-style:square;
+}
+
+.about{
+    text-decoration: overline underline;
+    position: relative;
+    text-align: center;
+    font-family: 'Berkshire Swash';
+    color: rgb(3, 2, 60);
+    text-shadow: 10px 10px 12px rgb(108, 106, 106);
+    letter-spacing: 4px;
+    font-size: 6rem;
+    font-style: italic;
+    padding-top: 5rem;
+}
+ 
+.contact{
+    font-family: 'EB Garamond';
+    color: rgb(0, 0, 0);
+    text-shadow: 10px 10px 12px rgb(108, 106, 106);
+    font-size: 3.5rem;
+    font-style: italic;
+    padding-top: 5rem;
+}
+
+h3{
+    position: relative;
+    text-align: end;
+    top: 70px;
+    font-family: 'EB Garamond';
+    color: blue;
+    text-shadow: 3px 3px 4px rgb(108, 106, 106);
+    font-size: 2rem;
+}
